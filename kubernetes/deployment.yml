@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testkub1
+  labels:
+    app: testkub1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testkub1
+  template:
+    metadata:
+      labels:
+        app: testkub1
+    spec:
+      containers:
+        - name: django-kube
+          imagePullPolicy: Never
+          image: aishwaryak01/dockerimage
+          command: ["./manage.py", "runserver", "0.0.0.0:8000"]
+          ports:
+          - containerPort: 8000
