@@ -20,4 +20,4 @@ Make and apply the migrations for the project to build your local database:
 Run the Django development server:
 (venv) $ python manage.py runserver
 
-Navigate to http://localhost:8000/ or http://localhost:8000/projects to see project in action.
+Navigate to http://localhost:8000/ to see project in action.
