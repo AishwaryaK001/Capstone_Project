@@ -4,8 +4,6 @@ Get Started With Django: Build a Hello World App
 
 SETUP
 =====
-You can run the provided example project on your local machine by following the steps outlined below.
-
 Create a new virtual environment:
 $ python3 -m venv venv
 
